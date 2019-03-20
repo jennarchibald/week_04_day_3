@@ -1,0 +1,17 @@
+<p>EMPTY ORDER FORM: </p>
+<form method="post" action="/pizza-orders">
+  <label for="first-name">First Name:</label>
+  <input type="text" id="first-name" name="first_name" />
+  <label for="last-name">Last Name:</label>
+  <input type="text" id="last-name" name="last_name"/>
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity"/>
+  <label for="topping">Topping:</label>
+  <select id="topping" name="topping">
+    <option value="Pepperoni">Pepperoni</option>
+    <option value="Hawaian">Hawaian</option>
+    <option value="Veggie">Veggie</option>
+  </select>
+
+  <input type="submit" value="Order Pizza!"/>
+</form>

@@ -1,0 +1,11 @@
+<p>First name: <%= @order.first_name()%></p>
+<p>Last name: <%= @order.last_name()%></p>
+<p>Topping: <%= @order.topping()%></p>
+<p>Quantity: <%= @order.quantity()%></p>
+<p>Total: <%= @order.total()%></p>
+
+<form action="/pizza-orders/<%= @order.id %>/delete" method="post">
+<input type="submit" value="DELETE THIS ORDER">
+</form>
+
+<a href="/pizza-orders/<%=@order.id%>/edit">Edit This Order</a>
