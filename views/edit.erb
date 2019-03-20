@@ -9,10 +9,10 @@
   <input type="number" id="quantity" name="quantity"value="<%= @order.quantity%>"/>
   <label for="topping">Topping:</label>
   <select id="topping" name="topping">
-    <option value="<%=@order.topping%>" selected><%= @order.topping %></option>
-    <option value="Pepperoni">Pepperoni</option>
-    <option value="Hawaian">Hawaian</option>
-    <option value="Veggie">Veggie</option>
+    <% toppings = ["Pepperoni", "Hawaian", "Veggie"]%>
+    <% for topping in toppings %>
+      <option value="<%=topping%>" <%= "selected" if topping == @order.topping %>><%=topping%></option>
+    <% end %>
   </select>
 
   <input type="submit" value="Submit Changes"/>

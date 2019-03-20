@@ -1,0 +1,19 @@
+body {
+  background-color: lightcyan;
+  font-family: monospace;
+  font-size: large;
+  color: midnightblue;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-position: inside;
+}
